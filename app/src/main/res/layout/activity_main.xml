@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="uk.ac.reading.gm013960.overwatchrawsoundfiles.MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|top"
+        android:textSize="30sp"
+        android:text="@string/app_name"
+        android:id="@+id/textViewAppTitle" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/textViewAppTitle"
+        android:id="@+id/mySpacer"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/mySpacer"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageButton
+            android:layout_width="@dimen/portrait_size"
+            android:layout_height="@dimen/portrait_size"
+            android:id="@+id/imageButtonBastion"
+            android:onClick="onGoToSoundBites"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/bastion_portrait"
+            android:background="@drawable/_0" />
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageButtonBastion"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:columnCount="3"
+            android:rowCount="3">
+
+            <ImageButton
+                android:layout_width="@dimen/portrait_size"
+                android:layout_height="@dimen/portrait_size"
+                android:id="@+id/imageButtonDVa"
+                android:onClick="onGoToSoundBites"
+                android:contentDescription="@string/d_va_portrait"
+                android:background="@drawable/_1" />
+
+            <ImageButton
+                android:layout_width="@dimen/portrait_size"
+                android:layout_height="@dimen/portrait_size"
+                android:id="@+id/imageButtonGenji"
+                android:onClick="onGoToSoundBites"
+                android:contentDescription="@string/genji_portrait"
+                android:background="@drawable/_2" />
+
+            <ImageButton
+                android:layout_width="@dimen/portrait_size"
+                android:layout_height="@dimen/portrait_size"
+                android:id="@+id/imageButtonHanzo"
+                android:onClick="onGoToSoundBites"
+                android:contentDescription="@string/hanzo_portrait"
+                android:background="@drawable/_3" />
+
+            <ImageButton
+                android:layout_width="@dimen/portrait_size"
+                android:layout_height="@dimen/portrait_size"
+                android:id="@+id/imageButtonJunkrat"
+                android:onClick="onGoToSoundBites"
+                android:contentDescription="@string/junkrat_portrait"
+                android:background="@drawable/_4" />
+
+            <ImageButton
+                android:layout_width="@dimen/portrait_size"
+                android:layout_height="@dimen/portrait_size"
+                android:id="@+id/imageButtonLucio"
+                android:onClick="onGoToSoundBites"
+                android:contentDescription="@string/lucio_portrait"
+                android:background="@drawable/_5" />
+
+            <ImageButton
+                android:layout_width="@dimen/portrait_size"
+                android:layout_height="@dimen/portrait_size"
+                android:id="@+id/imageButtonMcCree"
+                android:onClick="onGoToSoundBites"
+                android:contentDescription="@string/mccree_portrait"
+                android:background="@drawable/_6" />
+
+            <ImageButton
+                android:layout_width="@dimen/portrait_size"
+                android:layout_height="@dimen/portrait_size"
+                android:id="@+id/imageButtonMei"
+                android:onClick="onGoToSoundBites"
+                android:contentDescription="@string/mei_portrait"
+                android:background="@drawable/_7" />
+
+            <ImageButton
+                android:layout_width="@dimen/portrait_size"
+                android:layout_height="@dimen/portrait_size"
+                android:id="@+id/imageButtonMercy"
+                android:onClick="onGoToSoundBites"
+                android:contentDescription="@string/mercy_portrait"
+                android:background="@drawable/_8" />
+
+            <ImageButton
+                android:layout_width="@dimen/portrait_size"
+                android:layout_height="@dimen/portrait_size"
+                android:id="@+id/imageButtonPharah"
+                android:onClick="onGoToSoundBites"
+                android:contentDescription="@string/pharah_portrait"
+                android:background="@drawable/_9" />
+
+        </GridLayout>
+    </RelativeLayout>
+</RelativeLayout>
